@@ -67,14 +67,6 @@ margin: 0;}
   align-items: center;
 }
 
-@keyframes bikemovement {
-  from{
-    margin-top: 5%;
-  }
-  to{
-    margin-top: 4%;
-  }
-}
 
 .wheel {
   border: solid 2px #d1d2d5;
