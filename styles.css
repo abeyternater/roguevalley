@@ -165,6 +165,9 @@ margin: 0;
     width: 100vw;
     text-align: center;
     margin-top: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 
