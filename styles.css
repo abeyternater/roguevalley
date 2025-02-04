@@ -3,6 +3,12 @@ html{
     width: 100vw;
 }
 
+input.invalid {
+  background-color: #ffdddd;
+}
+
+
+
 body {
   background-image: linear-gradient(to right, #033b10, #97a871);;
   height: 100vh;
@@ -31,6 +37,27 @@ img{
   align-items: center;
   justify-content: center;
   display: flex;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fffefe;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.2;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
 }
 
  
@@ -170,6 +197,14 @@ margin: 0;
     position: relative;
 }
 
+.time{
+  justify-content: center;
+  display: flex;
+}
+
+.tab {
+  display: none;
+}
 
 
 .frame {
