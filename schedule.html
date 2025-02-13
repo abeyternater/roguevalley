@@ -11,12 +11,11 @@
 <body>   
     <div class="schedule">
         <h1 class="title"> When would you like your bike(s) fixed?</h1>
-        <form id="regForm" action="">            
+        <form id="regForm" action="linktogooglesheetconnection+email">            
             <!-- One "tab" for each step in the form: -->
             <div class="tab nowlaterbuttons">
-              <button class="button-56" id="now" name="Time" oninput="this.className = ''" onclick="nextPrev(1)">Now</button>
-              <button class="button-56" id="later" name="Time" oninput="this.className = ''" onclick="nextPrev(1)">Later</button>
-
+              <input type="button" class="button-56" onclick="nextPrev(1)" value="Now"></input>
+              <input type="button" class="button-56" onclick="nextPrev(1)" value="Later"></input>
             </div>
             
             <div class="tab">Contact Info:
@@ -31,12 +30,14 @@
             
             
             <div style="overflow:auto;">
-              <div style="float:right;">
-                <button class="button-56" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <div style="display: flex;">
+
+                <button class="button-56" type="button" id="prevBtn" onclick="nextPrev(-1)">Prior</button>
                 <button class="button-56" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
               </div>
             </div>
-            
+            </div>
+          </div>
             <!-- Circles which indicates the steps of the form: -->
             <div style="text-align:center;margin-top:40px;">
               <span class="step"></span>
